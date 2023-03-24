@@ -1,0 +1,16 @@
+
+{% if user.is_authenticated %}
+    Logged In as {{ user.username }}
+
+    <a href="#">Logout</a>
+
+    {% else %}
+
+    <a href="#">SignUP</a>
+    <a href="#">Login</a>
+
+{% endif %}
+
+{% block content %}
+
+{% endblock %}
